@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Logo Changer</title>
+  <style>
+    body {
+      font-family: Calibri, "Segoe UI", Arial, sans-serif;
+      padding: 10px;
+      background-color: #f9f9f9;
+      color: #333;
+      width: 220px;
+    }
+    h3 {
+      margin-top: 0;
+      font-weight: 600;
+    }
+    input[type="file"],
+    input[type="text"],
+    button {
+      width: 100%;
+      margin: 6px 0;
+      padding: 6px;
+      font-family: inherit;
+      font-size: 14px;
+    }
+    button {
+      border: none;
+      cursor: pointer;
+      border-radius: 4px;
+    }
+    #applyBtn {
+      background-color: #4CAF50;
+      color: white;
+    }
+    #applyBtn:hover {
+      background-color: #45a049;
+    }
+    #resetBtn {
+      background-color: #d9534f;
+      color: white;
+    }
+    #resetBtn:hover {
+      background-color: #c9302c;
+    }
+  </style>
+</head>
+<body>
+  <h3>AnyLogo Changer [MINIBLOX]</h3>
+  <h4>by ma007rio</h2>
+  <input type="file" id="fileInput" accept="image/*">
+  <input type="text" id="urlInput" placeholder="Image URL">
+<button id="applyBtn" onclick="this.textContent='Done!'; setTimeout(()=>this.textContent='Apply',1500)">Apply</button>
+  <button id="resetBtn" onclick="this.textContent='Done!'; setTimeout(()=>this.textContent='Reset to Default',1500)">Reset to Default</button>
+  <script src="popup.js"></script>
+</body>
+</html>

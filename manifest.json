@@ -1,0 +1,16 @@
+{
+  "manifest_version": 3,
+  "name": "AnyLogo Changer",
+  "version": "1.0.0",
+  "description": "Change the Miniblox home screen logo",
+  "permissions": ["storage", "activeTab", "scripting"],
+  "action": {
+    "default_popup": "popup.html"
+  },
+  "content_scripts": [
+    {
+      "matches": ["*://miniblox.io/*"],
+      "js": ["content.js"]
+    }
+  ]
+}
